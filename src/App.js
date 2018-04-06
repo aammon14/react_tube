@@ -4,6 +4,7 @@ import _ from 'lodash';
 import Searchbar from './components/Searchbar';
 import VideoList from './components/VideoList';
 import VideoDetail from './components/VideoDetail';
+import './App.css';
 require('dotenv').config()
 const API_KEY = process.env.REACT_APP_API_KEY
 
@@ -30,12 +31,14 @@ class App extends Component {
   render () {
     const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 300)
     return (
-      <div>
+      <div className="appMain">
         <Searchbar onSearchTermChange={videoSearch} />
-        <VideoDetail video={this.state.selectedVideo} />
-        <VideoList 
-          onVideoSelect={selectedVideo => this.setState({selectedVideo}) }
-          videos={this.state.videos} />
+        <div className='videoAndList'>
+          <VideoDetail video={this.state.selectedVideo} />
+          <VideoList 
+            onVideoSelect={selectedVideo => this.setState({selectedVideo}) }
+            videos={this.state.videos} />
+        </div>
       </div>
     );
   }

@@ -15,10 +15,12 @@ onInputChange(term) {
 
   render() {
     return(
-      <div>
+      <div className="searchComp">
+        <h1>Welcome to React-Tube</h1>
         <input 
           value={this.state.searchTerm}
-          onChange={event => this.onInputChange(event.target.value)} />
+          onChange={event => this.onInputChange(event.target.value)}
+          placeholder='Search Youtube Videos...' />
       </div>
     );
   }

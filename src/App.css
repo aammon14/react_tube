@@ -1,0 +1,111 @@
+body {
+  background: linear-gradient(rgb(0, 216, 255), rgb(0, 100, 255));
+  font-family: 'Stylish', sans-serif;
+}
+.appMain {
+  text-align: center;
+}
+.videoAndList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/*Search component styling:*/
+.searchComp {
+  width: 100%;
+  margin: 20px;
+}
+.searchComp h1 {
+  font-size: 36px;
+}
+.searchComp input {
+  margin: 0 auto;
+  margin-right: 35px;
+  width: 75%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+/*Main video component styling:*/
+.videoDetailComp {
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #888888;
+  margin: 10px auto;
+  text-align: center;
+  max-width: 600px;
+  width: 85%;
+  height: 100%;
+  background: white;
+}
+.videoDetailComp iframe {
+  margin : 10px auto;  
+}
+.videoDetailComp h1 {
+  border-bottom: 1px solid black;
+  margin: 5px 10px;
+}
+.videoDetailComp p {
+  text-align: left;
+  margin: 0 10px 10px;
+}
+
+/*Video list component styling:*/
+.listComp {
+  width: 100%;
+  min-width: 300px;
+  margin: 0;
+  max-width: 680px;
+}
+
+/*Indiviual list item component styling:*/
+.listItemComp {
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #888888;
+  list-style-type: none;
+  padding: 5px;
+  margin: 0 auto 8px;
+  margin-right: 40px;
+  display: flex;
+  text-align: left;
+}
+.listItemComp:hover {
+  background: rgb(0, 216, 255);
+  cursor: pointer;
+}
+.listImg {
+  text-align: center;
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+.listImg img {
+  width: 100%;
+}
+.desc {
+  float: right;
+  width: 70%;
+}
+.desc h3 {
+  border-bottom: 1px solid black;
+  margin: 5px auto 0;
+}
+
+@media (max-width: 700px) {
+  .videoDetailComp iframe {
+    width: 280px;
+    height: 157.5px; 
+  }
+}
+
+
+
+
+
+
