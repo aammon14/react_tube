@@ -2,6 +2,7 @@
 ### Andrew Ammon
 
 ----------
+### About the app:
 React-tube is a simple single-page app built using React. This app employs the Youtube API to render videos from Youtube. Upon loading the page you will see a list of the first five videos that come up when you search 'React JS' on Youtube.  The first video in that last will render in the player and will play when clicked on.  To view any videos in the list, simply click on that video and the main video player will switch to that video. 
 
 -------------
